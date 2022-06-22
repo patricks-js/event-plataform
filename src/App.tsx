@@ -1,11 +1,7 @@
 import { Event } from "./pages/event";
 
 function App() {
-  return (
-    <>
-      <Event />
-    </>
-  );
+  return <Event />;
 }
 
 export default App;
