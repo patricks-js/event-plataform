@@ -1,5 +1,5 @@
 import { gql, useQuery } from "@apollo/client";
-import { Lesson } from "./lesson";
+import { Lesson } from "./Lesson";
 
 const GET_LESSONS_QUERY = gql`
   query {
@@ -22,6 +22,7 @@ interface GetLessonsQueryResponse {
     lessonType: "live" | "class";
   }[];
 }
+
 
 export const Sidebar = () => {
   const { data } = useQuery<GetLessonsQueryResponse>(GET_LESSONS_QUERY);
